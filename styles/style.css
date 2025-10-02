@@ -1,0 +1,123 @@
+@import url(global.css);
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: var(--spacing) 0;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  .header__title {
+    font-size: 2rem;
+  }
+  
+  .header__subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Main Section */
+  .main {
+    padding: var(--spacing);
+  }
+  
+  .list-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .list-form {
+    display: flex;
+    gap: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  
+  .list-form__input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+  
+  .list-form__button {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .list-form__button:hover {
+    background-color: var(--color-text);
+    color: var(--color-secondary);
+  }
+  
+  /* Shopping List */
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+  }
+  
+  .list__item-text {
+    flex: 1;
+  }
+  
+  .list__actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .list__action-button {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .list__action-button--done {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  .list__action-button--done:hover {
+    background-color: #388E3C;
+  }
+  
+  .list__action-button--remove {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  .list__action-button--remove:hover {
+    background-color: #D32F2F;
+  }
+  

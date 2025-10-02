@@ -1,0 +1,15 @@
+/* Variáveis Globais */
+:root {
+  --color-primary: #817f81  ;
+  --color-secondary: #e0dde0 ;
+  --color-background: #ffffff ;
+  --color-text: #333;
+  --color-text-light: #ffffff ;
+  --color-border: #99999967;
+
+  --font-family: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --spacing: 1rem;
+  --border-radius: 5px;
+}
+

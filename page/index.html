@@ -7,34 +7,27 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__title">Quicklist</h1>
-    <p class="header__subtitle">Gerencie sua lista de compras da semana</p>
+  <header>
+    <h1 class="logo">QuickList</h1>
   </header>
 
-  <main class="main">
-    <section class="list-section">
-      <form class="list-form" id="add-item-form">
-        <input 
-          type="text" 
-          id="item-input" 
-          class="list-form__input" 
-          placeholder="Adicione um novo item..." 
-          required>
-        <button type="submit" class="list-form__button">Adicionar</button>
-      </form>
+  <main class="container">
+    <a href="#" class="back-link">← Voltar</a>
 
-      <ul class="list" id="shopping-list">
-        <!-- Os itens da lista serão adicionados aqui -->
-        <li class="list__item">
-          <span class="list__item-text">Exemplo de Item</span>
-          <div class="list__actions">
-            <button class="list__action-button list__action-button--done">✔</button>
-            <button class="list__action-button list__action-button--remove">✖</button>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <h2 class="title">Compras da semana</h2>
+
+    <div class="input-group">
+      <input type="text" id="itemInput" placeholder="Adicione um novo item">
+      <button id="addBtn">Adicionar Item</button>
+    </div>
+
+    <ul class="list">
+      <!--<li class="list-item"><span>Pão de forma</span><button class="remove-btn">✕</button></li></span>-->
+    </ul>
+
+    <div class="alert">
+      O item foi removido da lista
+    </div>
   </main>
   <script src="../scripts/script.js"></script>
 </body>

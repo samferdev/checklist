@@ -1,15 +1,15 @@
-/* Variáveis Globais */
 :root {
-  --color-primary: #817f81  ;
-  --color-secondary: #e0dde0 ;
-  --color-background: #ffffff ;
-  --color-text: #333;
-  --color-text-light: #ffffff ;
-  --color-border: #99999967;
+  /* Cores principais */
+  --color-primary: #CA3884;
+  --color-primary-hover: #A52C6B;
+  --color-danger: #C93847;
 
-  --font-family: 'Arial', sans-serif;
-  --font-size-base: 16px;
-  --spacing: 1rem;
-  --border-radius: 5px;
+  /* Neutros */
+  --color-bg: #F4F5FB;
+  --color-white: #FFFFFF;
+  --color-black: #080B12;
+  --color-border: #D1D5DB;
+  --color-border-light: #E5E7EB;
+  --color-gray: #9CA3AF;
+  --color-surface: #F9FAFB;
 }
-

@@ -1,123 +1,124 @@
 @import url(global.css);
 
-/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    line-height: 1.5;
-  }
-  
-  /* Header */
-  .header {
-    text-align: center;
-    padding: var(--spacing) 0;
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-  }
-  
-  .header__title {
-    font-size: 2rem;
-  }
-  
-  .header__subtitle {
-    font-size: 1rem;
-  }
-  
-  /* Main Section */
-  .main {
-    padding: var(--spacing);
-  }
-  
-  .list-section {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .list-form {
-    display: flex;
-    gap: var(--spacing);
-    margin-bottom: var(--spacing);
-  }
-  
-  .list-form__input {
-    flex: 1;
-    padding: 0.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-  }
-  
-  .list-form__button {
-    padding: 0.5rem 1rem;
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .list-form__button:hover {
-    background-color: var(--color-text);
-    color: var(--color-secondary);
-  }
-  
-  /* Shopping List */
-  .list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .list__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    margin-bottom: 0.5rem;
-    background-color: #fff;
-  }
-  
-  .list__item-text {
-    flex: 1;
-  }
-  
-  .list__actions {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .list__action-button {
-    padding: 0.3rem 0.5rem;
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .list__action-button--done {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-  }
-  
-  .list__action-button--done:hover {
-    background-color: #388E3C;
-  }
-  
-  .list__action-button--remove {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-  }
-  
-  .list__action-button--remove:hover {
-    background-color: #D32F2F;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+/* Voltar */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Título */
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Input + botão */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.input-group button {
+  background: var(--color-primary);
+  border: none;
+  padding: 0.8rem 1rem;
+  color: var(--color-white);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-group button:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Lista */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.list-item{
+  background: var(--color-surface);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--color-gray);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: var(--color-primary);
+}
+
+/* Alerta */
+.alert {
+  background: var(--color-danger);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
